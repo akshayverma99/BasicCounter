@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="root">
+    </div>
+
+    <script>
+        var root = new Vue({
+            el: "#root",
+            data: {num: 0},
+            methods: {
+                add: function(){
+                    this.num++
+                },
+                subtract: function(){
+                    this.num--
+                }
+            },
+            template: `
+               <div>
+                <label id="count">{{ num }}</label>
+                <div id="button-holder">
+                <button @click="subtract">-</button>
+                <button @click="add">+</button>
+                </div>
+                </div>
+            `
+        })
+    </script>
+
+</body>
+</html>

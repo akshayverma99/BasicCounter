@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <label id="count">0</label>
+  <div id="button-holder">
+    <button id="subtract">-</button>
+    <button id="add">+</button>
+  </div>
+
+
+  <script>
+    var num = 0
+    document.getElementById("count").innerHTML = num.toString()
+
+    function increment(){
+      num++
+      document.getElementById("count").innerHTML = num.toString()
+    }
+
+    function decrement(){
+      num = num-1
+      document.getElementById("count").innerHTML = num.toString()
+    }
+
+    document.getElementById("add").addEventListener("click", increment)
+    document.getElementById("subtract").addEventListener("click", decrement)
+
+
+  </script>
+</body>
+
+</html>
