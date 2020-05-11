@@ -4,4 +4,5 @@ Index.html -> Vanilla JS
 jqueryTest.html -> JQuery
 vueTest.html -> Vue
 
+
 All javascript is inline
